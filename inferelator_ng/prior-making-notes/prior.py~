@@ -647,12 +647,12 @@ def main(args):
         for gene in targets_handle:
             target_genes.append(gene.split()[0])
 
-    #motifs_file = './input-tests/motifs_test_file.bed'
-    #bam_file = './input-tests/bam_test_file.bam'
-    #peaks_file = './input-tests/peaks_test_file.bed'
-    #tss_file = './input-tests/tsses_test_file.bed'
-    #transcription_factors = ['TF1', 'TF2', 'TF3']
-    #target_genes = ['gene1', 'gene2']
+    motifs_file = './input-tests/motifs_test_file.bed'
+    bam_file = './input-tests/bam_test_file.bam'
+    peaks_file = './input-tests/peaks_test_file.bed'
+    tss_file = './input-tests/tsses_test_file.bed'
+    transcription_factors = ['TF1', 'TF2', 'TF3']
+    target_genes = ['gene1', 'gene2']
 
     prior = Prior(bam_file, motifs_file,
                   peaks_file, tss_file,
